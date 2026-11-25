@@ -1,0 +1,109 @@
+{
+ "title": "When a more cyclic majority tournament is more probable",
+ "upload_type": "publication",
+ "publication_type": "preprint",
+ "description": "<p><strong>Unrefereed research candidate.</strong> When many voters each rank a fixed set of candidates independently and uniformly at random (the impartial-culture model, the standard yardstick of voting theory), the head-to-head majorities form a tournament: for each pair, an arrow from the majority winner to the loser. A cyclic triple is a rock-paper-scissors loop (A beats B, B beats C, C beats A), the pattern behind Condorcet's paradox.</p><p><strong>Question.</strong> Harrison-Trainor (Mathematical Social Sciences, 2022; Conjecture 6.3 of the arXiv version) conjectured that, in the limit of many voters, a labelled tournament with fewer cyclic triples (equivalently, larger linearity, the sum of squared win counts) is always the more probable one. He checked it for up to five candidates.</p><p><strong>Main results.</strong> (1) The conjecture is false. For every odd t there are tournaments on 14t candidates in which the tournament with 3t<sup>3</sup> more cyclic triples is 2<sup>3t<sup>2</sup>+o(t<sup>2</sup>)</sup> times as probable. Splitting candidates into ordered blocks explains why: the probability cost is governed by pairs of candidates whose latent strengths must be nearly equal (about a factor of two per pair), while cyclic triples are governed by triples, and the two counts can order block structures oppositely. (2) A rigorous rational certificate gives an explicit pair on 78 candidates: the tournament with three more cyclic triples is more than 10<sup>5</sup> times as probable, and the reversal persists for isomorphism classes (ratio above 3.3). (3) Monte Carlo computation, which is not a proof, finds no reversal on seven or fewer candidates and finds reversals on 13 candidates (by about 1%) and 14 candidates (by a factor of about 2.7). (4) The extremal half of the conjecture is true: the transitive tournaments are exactly the most probable ones, for every number of candidates and for a wide class of paired-comparison models. (5) Part II, for round robins: for any fixed latent-type comparison model with probabilities strictly between zero and one, either the win totals determine every outcome's probability (the Bradley&ndash;Terry case) or a typical outcome shares its win totals with outcomes exponentially more and less probable on the scale of the number of pairs; a conditional test built from directed triangles is exactly calibrated at every vector of win totals and detects every fixed departure of this kind from a single round robin. (6) With one observation per pair, the minimax Bradley&ndash;Terry&ndash;Luce test of Makur and Singh is impossible at constant separation; whether a constant number of observations per pair suffices remains open.</p><p><strong>Credit.</strong> The conjecture is Harrison-Trainor's; the Gaussian limit is due to Harrison-Trainor and to H&#261;z&#322;a, Mossel, Ross and Zheng; the qualitative characterisation of score-determined models to Lauritzen and to Iyer; the masking construction to Rastogi, Balakrishnan, Shah and Singh; the replication question to Makur and Singh.</p><p><strong>Limits.</strong> Impartial culture is a mathematical null model, not a description of real electorates. All election results are in the many-voter limit; no finite electorate size is given. The smallest counterexample is not determined: certified at 78 candidates, and between 8 and 13 on the numerical evidence. The results of Part II hold for a fixed model, and the tests have modest power at league sizes.</p><p><strong>Contents.</strong> The paper (LaTeX source and PDF); an exact rational certificate (standard library); exhaustive enumerations for five and up to six candidates; checks of the scan and spectral tests; the seeded power study; the Monte Carlo small-case study; recorded outputs; the bibliography, a machine-readable index, a research-gate record, a review summary, a replay receipt and SHA-256 sums. Every certificate check exits with an error on failure, also under python -O.</p><p><strong>Assurance.</strong> Written proofs with an exact rational certificate and exhaustive small-case checks. Internal AI-assisted review only: five Claude reviewer roles in two calls, the lead's replay of the rational certificate and every check script with a negative control, one revision round with extensions, then a re-review and proof audit of the changed proofs. No Astra/Codex review took place. This is not peer review, independent reproduction or formal verification. Creator: Anonymous. Text CC0-1.0; code MIT.</p>",
+ "creators": [
+  {
+   "name": "Anonymous"
+  }
+ ],
+ "access_right": "open",
+ "license": "cc-zero",
+ "version": "0.1.0-candidate",
+ "publication_date": "2026-11-25",
+ "keywords": [
+  "majority tournament",
+  "impartial culture",
+  "Condorcet paradox",
+  "random elections",
+  "cyclic triples",
+  "Bradley-Terry model",
+  "paired comparisons",
+  "round robin",
+  "goodness-of-fit test"
+ ],
+ "notes": "Code (*.py and the CI workflow) is MIT; prose, manuscript, recorded outputs and records are CC0-1.0.",
+ "related_identifiers": [
+  {
+   "identifier": "https://github.com/ipitchford/majority-tournament-cyclic-reversal/tree/v0.1.0-candidate",
+   "relation": "isSupplementTo",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://evidencepress.org/releases/majority-tournament-cyclic-reversal/",
+   "relation": "isDocumentedBy",
+   "scheme": "url"
+  },
+  {
+   "identifier": "10.1016/j.mathsocsci.2022.01.002",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s00440-020-00994-7",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s00039-010-0047-x",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1002/sta4.70028",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1007/s00355-019-01213-6",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1214/14-aos1272",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "10.1109/tit.2025.3605846",
+   "relation": "references",
+   "scheme": "doi"
+  },
+  {
+   "identifier": "arXiv:2009.02979",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:2604.00426",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:1609.05194",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "arXiv:1611.09579",
+   "relation": "references",
+   "scheme": "arxiv"
+  },
+  {
+   "identifier": "https://proceedings.mlr.press/v48/shahb16.html",
+   "relation": "references",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://jmlr.org/papers/v23/20-1304.html",
+   "relation": "references",
+   "scheme": "url"
+  },
+  {
+   "identifier": "https://tqft.net/web/research/students/TejasIyer/thesis.pdf",
+   "relation": "references",
+   "scheme": "url"
+  }
+ ]
+}

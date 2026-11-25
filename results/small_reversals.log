@@ -1,0 +1,16 @@
+3 {'classes': 2, 'reversals': 0, 'min_log_ratio_higher_lin_over_lower_lin': np.float64(1.242399612739536), 'max_rel_se': np.float64(0.0007277405262027937)}
+4 {'classes': 4, 'reversals': 0, 'min_log_ratio_higher_lin_over_lower_lin': np.float64(1.0368241595202141), 'max_rel_se': np.float64(0.000911646474562432)}
+5 {'classes': 12, 'reversals': 0, 'min_log_ratio_higher_lin_over_lower_lin': np.float64(0.7169685633311182), 'max_rel_se': np.float64(0.0010780436281213792)}
+6 {'classes': 56, 'reversals': 0, 'min_log_ratio_higher_lin_over_lower_lin': np.float64(0.4585026359207838), 'max_rel_se': np.float64(0.0012320642728047885)}
+7 {'classes': 456, 'reversals': 0, 'min_log_ratio_higher_lin_over_lower_lin': np.float64(0.26006089820904066), 'max_rel_se': np.float64(0.001376853651285066)}
+8 {'compositions': 21, 'best_log_ratio_more_cyclic_over_less': np.float64(-0.6155095961500159), 'more_cyclic': (1, 3, 3, 1), 'less_cyclic': (3, 1, 1, 1, 1, 1), 'lins': [136, 138]}
+9 {'compositions': 34, 'best_log_ratio_more_cyclic_over_less': np.float64(-0.5376356187754396), 'more_cyclic': (1, 3, 3, 1, 1), 'less_cyclic': (3, 1, 1, 1, 1, 1, 1), 'lins': [200, 202]}
+10 {'compositions': 55, 'best_log_ratio_more_cyclic_over_less': np.float64(-0.4008462805105175), 'more_cyclic': (3, 5, 1, 1), 'less_cyclic': (1, 1, 1, 1, 1, 5), 'lins': [273, 275]}
+11 {'compositions': 89, 'best_log_ratio_more_cyclic_over_less': np.float64(-0.259207354163582), 'more_cyclic': (1, 3, 5, 1, 1), 'less_cyclic': (5, 1, 1, 1, 1, 1, 1), 'lins': [373, 375]}
+12 {'compositions': 144, 'best_log_ratio_more_cyclic_over_less': np.float64(-0.09595098642565603), 'more_cyclic': (1, 1, 1, 1, 5, 1, 1, 1), 'less_cyclic': (3, 3, 3, 3), 'lins': [496, 498]}
+13 {'compositions': 233, 'best_log_ratio_more_cyclic_over_less': np.float64(0.014789114608355192), 'more_cyclic': (3, 7, 3), 'less_cyclic': (7, 1, 1, 1, 3), 'lins': [618, 620]}
+14 {'compositions': 377, 'best_log_ratio_more_cyclic_over_less': np.float64(0.9981250031155824), 'more_cyclic': (1, 1, 1, 9, 1, 1), 'less_cyclic': (7, 7), 'lins': [759, 763]}
+{"less_cyclic_blocks": [7, 7], "more_cyclic_blocks": [1, 1, 1, 9, 1, 1], "lin": [763, 759], "cyclic_triples": [28, 30], "log_ratio_mean": 0.9953747595118045, "log_ratio_sd_between_seeds": 0.002063821560553069, "ratio": 2.7057381524089728}
+{"less_cyclic_blocks": [7, 7], "more_cyclic_blocks": [1, 9, 3, 1], "lin": [763, 757], "cyclic_triples": [28, 31], "log_ratio_mean": 0.2373511189050692, "log_ratio_sd_between_seeds": 0.002215168318437163, "ratio": 1.2678862184498545}
+{"less_cyclic_blocks": [7, 1, 1, 1, 3], "more_cyclic_blocks": [3, 7, 3], "lin": [620, 618], "cyclic_triples": [15, 16], "log_ratio_mean": 0.005734868653192393, "log_ratio_sd_between_seeds": 0.0008571158836244803, "ratio": 1.0057513444929618}
+{"less_cyclic_blocks": [7, 1, 1, 1, 1, 1, 1], "more_cyclic_blocks": [1, 1, 7, 3, 1], "lin": [622, 620], "cyclic_triples": [14, 15], "log_ratio_mean": 0.00949272448643157, "log_ratio_sd_between_seeds": 0.0004826398305136339, "ratio": 1.009537923302279}

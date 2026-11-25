@@ -1,0 +1,5 @@
+78 candidates: linearities 145275 145269 and P(B)/P(A) > 100000.
+78 candidates: the rational lower bound itself is 1.104e+05
+78 candidates: |Aut(A)| = 9 |Aut(B)| = 300125 and the isomorphism-class probability ratio exceeds 3.3.
+78 candidates: class-ratio lower bound 3.3109
+319 candidates: linearities 10099839 10094841 and P(B)/P(A) > 2^39.

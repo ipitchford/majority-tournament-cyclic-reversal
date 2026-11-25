@@ -1,0 +1,24 @@
+Release replay environment (25 November 2026, macOS arm64 host)
+Interpreters (printed inside the run, not assumed):
+- `uv run --no-project --python 3.12 --with numpy==2.3.5 --with scipy==1.17.0 python3` built an ephemeral environment
+  on CPython 3.12.11 with NumPy 2.3.5 and SciPy 1.17.0. All scripts ran under it.
+- `uv run --no-project --python 3.12 python3` (no extra packages) resolved to CPython 3.14.7 through the host's python3
+  shim; the three standard-library certificates were run under both 3.14.7 and 3.12.11 with identical output.
+Packages: requirements.txt pins numpy==2.3.5 and scipy==1.17.0. certificate.py, check_compression.py and check_cycles.py
+use the standard library only.
+Working directory: code/. Flags: python3 -I -B -O for the standard-library certificates; python3 -E -s -B -O for
+check_scan.py and check_spectral.py, and -E -s -B for example78.py, power_study.py and small_reversals.py (-E -s rather
+than -I because they import sibling modules). PYTHONDONTWRITEBYTECODE=1; OMP/OpenBLAS/MKL/vecLib threads 1.
+Run time: a few seconds for the certificates and checks; about 4 minutes for small_reversals.py (single core).
+GitHub CI: ubuntu-latest, actions/setup-python 3.12, pip install -r requirements.txt. Blocking job: manifest, every
+check above, comparison with results/ and the negative control. Non-blocking job: small_reversals.py with the tolerance
+below.
+Comparison policy (declared before tagging; the same in CI, README.md and REPLAY_RECEIPT.md):
+- results/certificate.txt (exact rational arithmetic) and results/counterexample-78.csv (exact combinatorics) must equal
+  the recorded files byte for byte on every platform.
+- results/power.csv (seeded rejection counts from floating-point simulation): byte-identical on the release platform;
+  on other platforms the rows and columns must agree and each rejection count may differ by at most 1.
+- results/small_reversals.json (seeded Monte Carlo): on other platforms the counts must agree and every log ratio must
+  agree to within 0.01.
+- Interpreter versions and timings are not compared.
+On the release platform every compared output was byte-identical to the recorded file.

@@ -1,0 +1,13 @@
+n,sd,model,rejections,repetitions
+90,1.0,logit,0,256
+90,1.0,probit,0,256
+180,1.0,logit,1,256
+180,1.0,probit,11,256
+360,1.0,logit,1,256
+360,1.0,probit,133,256
+600,1.0,logit,0,256
+600,1.0,probit,245,256
+360,0.5,logit,3,256
+360,0.5,probit,29,256
+360,1.5,logit,2,256
+360,1.5,probit,128,256

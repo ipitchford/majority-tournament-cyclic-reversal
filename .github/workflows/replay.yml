@@ -1,0 +1,75 @@
+# SPDX-License-Identifier: MIT
+name: Replay
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+env:
+  PYTHONDONTWRITEBYTECODE: "1"
+  OMP_NUM_THREADS: "1"
+  OPENBLAS_NUM_THREADS: "1"
+  MKL_NUM_THREADS: "1"
+jobs:
+  verify:
+    name: Manifest; certificates under python -O; exact comparison with results/; negative control (blocking)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check MANIFEST.sha256
+        run: sha256sum -c MANIFEST.sha256
+      - name: Install pinned dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Run every check in a copy of the package (cwd = code/)
+        run: |
+          python3 -c 'import sys, numpy, scipy; print(sys.version, numpy.__version__, scipy.__version__)'
+          for d in run neg1; do mkdir -p "$RUNNER_TEMP/$d"; cp -R code results "$RUNNER_TEMP/$d/"; done
+          cd "$RUNNER_TEMP/run/code"
+          python3 -I -B -O certificate.py | tee certificate.out
+          python3 -I -B -O check_compression.py
+          python3 -I -B -O check_cycles.py
+          python3 -E -s -B -O check_scan.py
+          python3 -E -s -B -O check_spectral.py
+          python3 -E -s -B example78.py > example78.csv
+          python3 -E -s -B power_study.py > power.csv
+      - name: Compare with the recorded results
+        # Exact outputs compare exactly: the rational certificate (certificate.txt) and the two 78-candidate
+        # tournaments (counterexample-78.csv). power.csv holds seeded rejection counts; it was byte-identical on the
+        # release platform, and off that platform each count may differ by at most 1 (declared tolerance, also in
+        # README.md, ENVIRONMENT.txt and REPLAY_RECEIPT.md).
+        run: |
+          R="$RUNNER_TEMP/run/code"
+          cmp results/certificate.txt "$R/certificate.out"
+          cmp results/counterexample-78.csv "$R/example78.csv"
+          cmp -s results/power.csv "$R/power.csv" && echo "power.csv byte-identical" || python3 -I .github/ci/compare_power.py results/power.csv "$R/power.csv"
+      - name: Negative control under -O
+        run: |
+          cd "$RUNNER_TEMP/neg1/code"
+          sed -i 's/    check(ratio_sq > 10\*\*10)$/    check(ratio_sq > 10**11)/' certificate.py
+          grep -q 'check(ratio_sq > 10\*\*11)' certificate.py
+          if python3 -I -B -O certificate.py > out.txt 2>&1; then echo "raised threshold not detected"; exit 1; fi
+          grep -q 'CHECK FAILED' out.txt
+          echo "negative control detected"
+      - name: Working tree unchanged
+        run: test -z "$(git status --porcelain)"
+  monte-carlo:
+    name: Monte Carlo small-case study (slow, non-blocking; log ratios within 0.01)
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install pinned dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Run small_reversals.py and compare with results/small_reversals.json
+        run: |
+          mkdir -p "$RUNNER_TEMP/mc" && cp -R code "$RUNNER_TEMP/mc/"
+          cd "$RUNNER_TEMP/mc/code"
+          python3 -E -s -B small_reversals.py out.json > out.log
+          python3 -I "$GITHUB_WORKSPACE/.github/ci/compare_mc.py" "$GITHUB_WORKSPACE/results/small_reversals.json" out.json

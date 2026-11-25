@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using these metadata."
+type: software
+title: "When a more cyclic majority tournament is more probable"
+abstract: "Unrefereed research candidate. Under impartial culture with many voters, Harrison-Trainor conjectured that a majority tournament with fewer cyclic triples is always more probable. The conjecture is false: for every odd t there are tournaments on 14t candidates in which the one with 3t^3 more cyclic triples is 2^(3t^2+o(t^2)) times as probable, and an exact rational certificate gives a 78-candidate pair in which the tournament with three more cyclic triples is more than 10^5 times as probable, also for isomorphism classes. Monte Carlo estimates (not proofs) find no reversal on seven or fewer candidates and reversals on 13 and 14. The transitive tournaments are exactly the most probable ones. Part II: outside the Bradley-Terry case, win totals leave exponential differences in probability that an exactly calibrated triangle test detects from one round robin; one observation per pair cannot support the minimax Bradley-Terry-Luce test of Makur and Singh."
+authors:
+  - name: "Anonymous"
+version: "0.1.0-candidate"
+date-released: "2026-11-25"
+doi: "10.5281/zenodo.24526810"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.24526810"
+    description: "This version"
+  - type: doi
+    value: "10.5281/zenodo.24526809"
+    description: "All versions (concept DOI)"
+repository-code: "https://github.com/ipitchford/majority-tournament-cyclic-reversal"
+url: "https://evidencepress.org/releases/majority-tournament-cyclic-reversal/"
+license: CC0-1.0
+keywords:
+  - majority tournament
+  - impartial culture
+  - Condorcet paradox
+  - random elections
+  - Bradley-Terry model
+  - paired comparisons
+preferred-citation:
+  type: article
+  title: "When a more cyclic majority tournament is more probable"
+  authors:
+    - name: "Anonymous"
+  year: 2026
+  doi: "10.5281/zenodo.24526810"
+  publisher:
+    name: "Zenodo"
+  notes: "Version 0.1.0-candidate; unrefereed"

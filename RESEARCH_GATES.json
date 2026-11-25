@@ -1,0 +1,271 @@
+{
+ "schemaVersion": "1.0",
+ "provenance": "Compiled 25 November 2026 for 0.1.0-candidate from the dated searches of the internal AI-assisted review (24 November 2026), the source retrieval and reading record, the corpus overlap check, refs.bib, REVIEW_SUMMARY.md and the paper's own positioning (Section 1). It records scrutiny performed, not historical priority.",
+ "contributionMap": [
+  {
+   "claim": "Harrison-Trainor linearity conjecture is false: ordered regular block tournaments on 14t candidates with 3t^3 more cyclic triples and 2^(3t^2+o(t^2)) times the probability",
+   "unit": "statement",
+   "paperLocation": "Theorem 4.3; Sections 3-4",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Harrison-Trainor (2022) Conjecture 6.3 (verified for n <= 5); Mossel (2010) transitive probability exp(-Theta(n^{5/3}))",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no refutation of Conjecture 6.3 was found among the citing works or web results"
+  },
+  {
+   "claim": "Explicit certified 78-candidate counterexample (ratio > 10^5), also for isomorphism classes (ratio > 3.3); 319-candidate witness",
+   "unit": "object",
+   "paperLocation": "Proposition 5.1, Corollary 5.2, Appendix A",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Harrison-Trainor (2022) exact and numerical values for n <= 5",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "no explicit counterexample was found"
+  },
+  {
+   "claim": "Transitive tournaments are exactly the most probable labelled tournaments, for every n and every exchangeable latent-strength model with strictly increasing win probabilities",
+   "unit": "statement",
+   "paperLocation": "Theorem 6.1",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Saile and Suksompong (2020) Lemma 6 (transitive score vector majorises); Harrison-Trainor (2022) small-n tables",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the extremal case was conjectured and checked for n <= 5; the majorisation lemma concerns score vectors, not tournament probabilities, and is cited and distinguished"
+  },
+  {
+   "claim": "Outside the Bradley-Terry case, win totals leave exponential probability gaps; exactly calibrated triangle tests detect every fixed departure from one round robin",
+   "unit": "statement",
+   "paperLocation": "Theorem 7.1, Corollaries 7.2-7.3, Section 8",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Lauritzen (2008) Sec. 2.4 and Iyer (2016) Thm 4.2.9 (qualitative score-uniformity characterisation); Georgakopoulos and Tyros (2016); Singh and Davidov (2026) lack-of-fit tests for cardinal or replicated data",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the qualitative characterisation is credited; the exponential gaps and the single-round-robin calibrated tests were not found"
+  },
+  {
+   "claim": "One observation per pair cannot support the Makur-Singh minimax BTL test (k = 1 impossible at constant separation)",
+   "unit": "statement",
+   "paperLocation": "Proposition 9.1",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Makur and Singh (2025) Thm 2 and remark after eq. (26); Rastogi et al. (2022) Prop. 4 (two-sample masking)",
+   "verdict": "partially-known-cited",
+   "verdictNote": "the masking construction is Rastogi et al.'s and credited; whether a constant number of observations suffices remains open"
+  },
+  {
+   "claim": "Method: compare probability cost (number of internal pairs, about a factor 2 each, Sum b_j^2) with cyclic-triple count (Sum b_j^3) across ordered block structures, using the two-sided mode bound M_T - ((n-1)/2) log(n+1) <= log p(T) <= M_T and an exact rational certificate",
+   "unit": "method",
+   "paperLocation": "Sections 3-5, Appendix A",
+   "searches": [
+    {
+     "date": "2026-11-24",
+     "corpus": "Semantic Scholar forward citations of arXiv:2009.02979 (six papers) and arXiv:2410.08360 (seven papers), general web searches, by the internal review roles; Evidence Press corpus (site papers/ and the batch corpus list)",
+     "query": "Harrison-Trainor linearity conjecture majority graph counterexample; impartial culture majority tournament probability cyclic triples; BTL goodness of fit single comparison per pair minimax replication Makur Singh; Singh Davidov lack of fit paired comparisons"
+    },
+    {
+     "date": "2026-11-24",
+     "corpus": "the cited works, obtained and read (arXiv, journal and proceedings records, the ANU thesis)",
+     "query": "Harrison-Trainor arXiv v. Conjecture 6.3 and tables; Hazla-Mossel-Ross-Zheng Gaussian limit; Mossel 2010 eq. (6); Saile-Suksompong Lemma 6; Lauritzen 2008 Sec. 2.4; Iyer Thm 4.2.9; Georgakopoulos-Tyros Prop. 2.1; Makur-Singh Thm 2 and remark after eq. (26); Rastogi et al. Prop. 4 and eq. (6); Shah et al. Thm 1; Singh-Davidov 2026 Sec. 4.1.1; Varin-Firth; Chatterjee 2015; Thornblad 2016"
+    }
+   ],
+   "closestPriorWork": "Gaussian representation of Harrison-Trainor and Hazla-Mossel-Ross-Zheng; Mossel (2010) Gaussian bounds",
+   "verdict": "new-in-bounded-search",
+   "verdictNote": "the block pairs-versus-triples comparison and the certificate were not found"
+  }
+ ],
+ "sourcesReadInFull": [
+  {
+   "citation": "Harrison-Trainor, M. (2022), An analysis of random elections with large numbers of voters, Mathematical Social Sciences 116, 68-84 (arXiv:2009.02979)",
+   "usedFor": "the conjecture, Gaussian limit, small-n values",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1016/j.mathsocsci.2022.01.002"
+  },
+  {
+   "citation": "Hazla, J., Mossel, E., Ross, N. and Zheng, G. (2020), The probability of intransitivity in dice and close elections, PTRF 178",
+   "usedFor": "Gaussian limit; close elections",
+   "readWhat": "arXiv version, the cited sections",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/s00440-020-00994-7"
+  },
+  {
+   "citation": "Mossel, E. (2010), Gaussian bounds for noise correlation of functions, GAFA 19",
+   "usedFor": "transitive probability exp(-Theta(n^{5/3}))",
+   "readWhat": "eq. (6) and its context",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/s00039-010-0047-x"
+  },
+  {
+   "citation": "Saile, C. and Suksompong, W. (2020), Robust bounds on choosing from large tournaments, Social Choice and Welfare 54",
+   "usedFor": "Lemma 6",
+   "readWhat": "Lemma 6 and context",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1007/s00355-019-01213-6"
+  },
+  {
+   "citation": "Lauritzen, S. L. (2008), Exchangeable Rasch matrices, Rendiconti di Matematica VII 28",
+   "usedFor": "score-uniformity characterisation",
+   "readWhat": "whole paper, Sec. 2.4",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://www.stats.ox.ac.uk/~steffen/papers/rendiconti.pdf"
+  },
+  {
+   "citation": "Iyer, T. (2016), Random tournaments, ANU honours thesis",
+   "usedFor": "Thm 4.2.9",
+   "readWhat": "the cited chapter",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://tqft.net/web/research/students/TejasIyer/thesis.pdf"
+  },
+  {
+   "citation": "Makur, A. and Singh, J. (2025), Minimax hypothesis testing for the Bradley-Terry-Luce model, IEEE Trans. Inf. Theory 71 (arXiv:2410.08360v2)",
+   "usedFor": "Thm 2, separation distance, replication remark",
+   "readWhat": "whole paper (arXiv version)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://doi.org/10.1109/TIT.2025.3605846"
+  },
+  {
+   "citation": "Rastogi, C., Balakrishnan, S., Shah, N. B. and Singh, A. (2022), JMLR 23(225)",
+   "usedFor": "Prop. 4 masking construction; moderate stochastic transitivity",
+   "readWhat": "Prop. 4, eq. (6)",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://jmlr.org/papers/v23/20-1304.html"
+  },
+  {
+   "citation": "Singh, R. and Davidov, O. (2026), Testing for lack of fit in paired comparison data, arXiv:2604.00426",
+   "usedFor": "circular-triad count; closest lack-of-fit line",
+   "readWhat": "whole preprint",
+   "date": "2026-11-24",
+   "evidenceLocator": "https://arxiv.org/abs/2604.00426"
+  }
+ ],
+ "limitationTriage": [
+  {
+   "limitation": "Smallest counterexample not determined (certified at 78; between 8 and 13 on numerical evidence)",
+   "closingQuestion": "Can a 13- or 14-candidate reversal be certified?",
+   "triedOrSearched": "Laplace-type bounds lose (n+1)^{(n-1)/2}; validated 13-dimensional integration not attempted; stated as open (Section 10, item 1)",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 10 item 1",
+   "whyNotClosedNow": "needs validated high-dimensional integration"
+  },
+  {
+   "limitation": "Small-case results are Monte Carlo estimates",
+   "closingQuestion": "Are the n <= 7 and n = 13, 14 findings stable?",
+   "triedOrSearched": "four independent seeds per high-precision pair; seed spread of log ratios at most 0.0022; relative standard errors below 0.15%",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Check scripts relied on assert",
+   "closingQuestion": "Do the checks fail on a corrupted claim under python -O?",
+   "triedOrSearched": "all checks converted to explicit failures; the negative control (threshold 10^10 -> 10^11) exits 1 under -O in the release replay and CI",
+   "estimatedCost": "minutes",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Labelled tournaments versus isomorphism classes",
+   "closingQuestion": "Does the reversal survive for isomorphism classes?",
+   "triedOrSearched": "exact automorphism counts in certificate.py; Corollary 5.2",
+   "estimatedCost": "hours",
+   "cheap": true,
+   "decision": "CLOSED",
+   "reasonOpen": "",
+   "whyNotClosedNow": ""
+  },
+  {
+   "limitation": "Constant replication for the Makur-Singh guarantee",
+   "closingQuestion": "Do two, or any constant number of, observations per ordered pair suffice?",
+   "triedOrSearched": "stated as open (Section 10, item 3)",
+   "estimatedCost": "research-level",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "Section 10 item 3",
+   "whyNotClosedNow": "out of scope of one revision round"
+  },
+  {
+   "limitation": "Novelty rests on searches of limited scope",
+   "closingQuestion": "Would MathSciNet, zbMATH or further indexes change attribution?",
+   "triedOrSearched": "Semantic Scholar citing works, web searches, cited sources read, Evidence Press corpus checked",
+   "estimatedCost": "subscription indexes",
+   "cheap": false,
+   "decision": "OPEN",
+   "reasonOpen": "subscription indexes were outside the searched corpus",
+   "whyNotClosedNow": "recorded here; the paper positions its results against the sources read"
+  }
+ ],
+ "extensionScout": {
+  "by": "five internal reviewer roles, the re-reviewer and the lead",
+  "date": "2026-11-24",
+  "proposals": [
+   "isomorphism-class version of the counterexample",
+   "small-case search for the threshold",
+   "certificate margin",
+   "certification at 13 or 14 candidates",
+   "split Part II into a companion paper"
+  ],
+  "actions": [
+   "done: Corollary 5.2",
+   "done: Section 5.2 and Table 1 (Monte Carlo)",
+   "done: Appendix A",
+   "listed as open in Section 10",
+   "not done: kept as Part II with signposting"
+  ]
+ }
+}
